@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#9CEFFD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Speaker !!"
+            android:textSize="25dp"
+            android:textColor="#00293F"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Preferred Language :"
+        android:textColor="#00293F"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardElevation="10dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp">
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="#00293F"
+        android:id="@+id/spinnerLang"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:id="@+id/getTextt"
+            android:textColorHint="@color/black"
+            android:hint="Enter Your Text here..."
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+   <Button
+       android:layout_width="200dp"
+       android:layout_height="60dp"
+       android:layout_marginTop="100dp"
+       android:layout_gravity="center"
+       android:text="Speak"
+       android:id="@+id/speakbtns"
+       android:textSize="25dp"
+       android:textColor="@color/white"
+       android:fontFamily="sans-serif-condensed"
+       android:textStyle="bold"
+       android:backgroundTint="#00293F"/>
+
+</LinearLayout>
