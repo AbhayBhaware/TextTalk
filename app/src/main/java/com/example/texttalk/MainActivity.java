@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (result==TextToSpeech.LANG_MISSING_DATA || result==TextToSpeech.LANG_NOT_SUPPORTED)
                     {
-                        Toast.makeText(MainActivity.this, "You Selected Language Not Supported", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Selected Language Not Supported", Toast.LENGTH_SHORT).show();
                     }
                     else {
                         tts.speak(txt, TextToSpeech.QUEUE_FLUSH, null, null);
